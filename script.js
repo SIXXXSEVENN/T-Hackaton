@@ -13,7 +13,7 @@ window.onload = (event) => {
 };
 
 function addToLocalStorage(key, sum) {
-  localStorage.setItem(key, parseInt(localStorage.getItem(key) + sum).toString())
+  localStorage.setItem(key, (parseInt(localStorage.getItem(key)) + sum).toString())
 }
 
 function saveTransactions() {
@@ -23,35 +23,33 @@ function saveTransactions() {
 
 function renderTransactionStats() {
   ["expenses", "income", "balance"].forEach((key) => {
-    document.getElementById(key).textContent = localStorage.getItem(key);
+    document.getElementById(key).textContent = `${localStorage.getItem(key)} руб.`;
   });
 }
 
-function saveTransactionStats(sum) {
-  console.log(sum);
+function saveTransactionStats(sum, newSum) {
   if (sum == 0) return;
-  else if (sum < 0) addToLocalStorage("expenses", -sum);
-  else if (sum > 0) addToLocalStorage("income", sum);
-  addToLocalStorage("balance", sum);
+  else if (sum < 0) addToLocalStorage("expenses", -newSum);
+  else if (sum > 0) addToLocalStorage("income", newSum);
+  addToLocalStorage("balance", newSum);
   renderTransactionStats();
 }
 
 function addTransaction(data) {
-  console.log(data);
-  saveTransactionStats(parseInt(data.sum));
+  saveTransactionStats(parseInt(data.sum), parseInt(data.sum));
   transactions.push(data);
   saveTransactions();
 }
 
 function deleteTransaction(index) {
-  saveTransactionStats(-transactions[index].sum);
+  saveTransactionStats(transactions[index].sum, -transactions[index].sum);
   transactions.splice(index, 1);
   saveTransactions();
 }
 
 function editTransaction(index, val) {
   if (val.sum) {
-    saveTransactionStats(-transactions[index].sum + val.sum);
+    saveTransactionStats(transactions[index].sum, -transactions[index].sum + val.sum);
     transactions[index].sum = val.sum;
   }
   if (val.category) transactions[index].category = val.category;
@@ -62,29 +60,46 @@ function editTransaction(index, val) {
 
 function renderTransactions() { // order == true means ascending order, order == false means descending order
   const filteredTransactions = transactions.slice(0, (page + 1)*50).filter((val) => {
-    (filter.category ? val.category == filter.category : true) &&
+    return (filter.category ? val.category == filter.category : true) &&
     (filter.type == "expenses" ? val.sum < 0 : (filter.type == "income" ? val.sum > 0 : true)) &&
     (filter.mindate ? val.date > filter.mindate : true) &&
     (filter.maxdate ? val.date < filter.maxdate : true)
   }).sort((a, b) => {
-    sortby == "category" ? (a.category > b.category) == order :
+    return sortby == "category" ? (a.category > b.category) == order :
     sortby == "sum" ? (a.sum > b.sum) == order :
     sortby == "date" ? (a.date > b.date) == order : false;
   });
-  console.log(filteredTransactions);
-  document.getElementById("transactions").innerHTML = filteredTransactions.slice(page*50, (page + 1)*50).map((val) => {
-    `<li>Sum: ${val.sum} Category: ${val.category} Date: ${val.date} Comment: ${comment}</li>`
-  });
+  document.getElementById("transactions").innerHTML = filteredTransactions.slice(page*50, (page + 1)*50).map((val, i) => {
+    return `<tr>
+      <th>${val.date}</th>
+      <th>${val.category}</th>
+      <th>${val.sum}</th>
+      <th>${val.comment}</th>
+      <th><a onclick="deleteTransaction(${i})">Удалить</a></th>
+    </tr>`
+  }).join("\n");
 }
 
 function changePage(newPage) {
   page = newPage;
+  document.getElementById("page").textContent = page.toString();
   renderTransactions();
+}
+
+function changeSortby(newSortby) {
+  console.log(123);
+  if (sortby === newSortby) {
+    sortby = null;
+    renderTransactions();
+  } else {
+    sortby = newSortby;
+    renderTransactions();
+  }
 }
 
 function exportCsv() {
   const csv = transactions.reduce((acc, val) => {
-    acc += `${val.sum},${val.category},${val.date},${val.comment}\n`
+    return acc + `${val.sum},${val.category},${val.date},${val.comment}\n`
   }, "");
   const url = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
   const link = document.createElement("a");
@@ -99,8 +114,8 @@ function exportCsv() {
 const addTransactionForm = document.getElementById("addTransactionForm");
 addTransactionForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const formData = new FormData(e.target);
-  console.log(formData.get("sum"));
-  addTransaction(Object.fromEntries(formData.entries()));
+  const data = Object.fromEntries(new FormData(e.target).entries());
+  if (data.type == "expenses") data.sum = -data.sum;
+  addTransaction(data);
   document.getElementById("addTransactionForm").reset();
 });
