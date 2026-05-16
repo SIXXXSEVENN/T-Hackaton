@@ -1,4 +1,8 @@
-transactions = JSON.parse(localStorage.getItem("transactions")) || [];
+let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
+let filter = {};
+let sortby = undefined;
+let order = true;
+let page = 0;
 
 function addToLocalStorage(key, value) {
   localStorage.setItem(key, ((localStorage.getItem(key).parseInt() || 0) - sum).toString())
@@ -6,32 +10,44 @@ function addToLocalStorage(key, value) {
 
 function saveTransactions() {
   localStorage.setItem("transactions", JSON.stringify(transactions));
+  renderTransactions();
 }
 
-function addTransaction(sum, category, date, comment) {
+function saveTransactionStats(sum) {
   if (sum == 0) return;
   else if (sum < 0) addToLocalStorage("expenses", -sum);
   else if (sum > 0) addToLocalStorage("income", sum);
   addToLocalStorage("balance", sum);
+  ["expenses", "income", "balance"].forEach((key) => {
+    document.getElementById(key).textContent = localStorage.getItem(key);
+  });
+}
+
+function addTransaction(sum, category, date, comment) {
+  saveTransactionStats(sum);
   transactions.push({ sum, category, date, comment });
   saveTransactions();
 }
 
 function deleteTransaction(index) {
+  saveTransactionStats(-transactions[index].sum);
   transactions.splice(index, 1);
   saveTransactions();
 }
 
 function editTransaction(index, val) {
-  if (val.sum) transactions[index].sum = val.sum;
+  if (val.sum) {
+    saveTransactionStats(-transactions[index].sum + val.sum);
+    transactions[index].sum = val.sum;
+  }
   if (val.category) transactions[index].category = val.category;
   if (val.date) transactions[index].date = val.date;
   if (val.comment) transactions[index].comment = val.comment;
   saveTransactions();
 }
 
-function listTransactions(filter, sortby, order) { // order == true means ascending order, order == false means descending order
-  return transactions.filter((val) => {
+function renderTransactions() { // order == true means ascending order, order == false means descending order
+  const filteredTransactions = transactions.filter((val) => {
     (filter.category ? val.category == filter.category : true) &&
     (filter.type == "expenses" ? val.sum < 0 : (filter.type == "income" ? val.sum > 0 : true)) &&
     (filter.mindate ? val.date > mindate : true) &&
@@ -41,14 +57,9 @@ function listTransactions(filter, sortby, order) { // order == true means ascend
     sortby == "sum" ? (a.sum > b.sum) == order :
     sortby == "date" ? (a.date > b.date) == order : false;
   });
-}
-
-function stats() {
-  return {
-    expenses: localStorage.getItem("expenses"),
-    income: localStorage.getItem("income"),
-    balance: localStorage.getItem("balance")
-  }
+  document.getElementById("transactions").innerHTML = filteredTransactions.slice(page*50, (page + 1)*50).map((val) => {
+    `<li>Sum: ${val.sum} Category: ${val.category} Date: ${val.date} Comment: ${comment}</li>`
+  });
 }
 
 function exportCsv() {
