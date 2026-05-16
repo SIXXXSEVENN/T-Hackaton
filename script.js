@@ -13,7 +13,7 @@ window.onload = (event) => {
 };
 
 function addToLocalStorage(key, sum) {
-  localStorage.setItem(key, parseInt(localStorage.getItem(key) - sum).toString())
+  localStorage.setItem(key, parseInt(localStorage.getItem(key) + sum).toString())
 }
 
 function saveTransactions() {
@@ -64,13 +64,14 @@ function renderTransactions() { // order == true means ascending order, order ==
   const filteredTransactions = transactions.slice(0, (page + 1)*50).filter((val) => {
     (filter.category ? val.category == filter.category : true) &&
     (filter.type == "expenses" ? val.sum < 0 : (filter.type == "income" ? val.sum > 0 : true)) &&
-    (filter.mindate ? val.date > mindate : true) &&
-    (filter.maxdate ? val.date < maxdate : true)
+    (filter.mindate ? val.date > filter.mindate : true) &&
+    (filter.maxdate ? val.date < filter.maxdate : true)
   }).sort((a, b) => {
     sortby == "category" ? (a.category > b.category) == order :
     sortby == "sum" ? (a.sum > b.sum) == order :
     sortby == "date" ? (a.date > b.date) == order : false;
   });
+  console.log(filteredTransactions);
   document.getElementById("transactions").innerHTML = filteredTransactions.slice(page*50, (page + 1)*50).map((val) => {
     `<li>Sum: ${val.sum} Category: ${val.category} Date: ${val.date} Comment: ${comment}</li>`
   });
@@ -99,5 +100,7 @@ const addTransactionForm = document.getElementById("addTransactionForm");
 addTransactionForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
+  console.log(formData.get("sum"));
   addTransaction(Object.fromEntries(formData.entries()));
+  document.getElementById("addTransactionForm").reset();
 });
