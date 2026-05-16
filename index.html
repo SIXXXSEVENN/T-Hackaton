@@ -1,0 +1,31 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1 id="expenses"></h1>
+    <h1 id="income"></h1>
+    <h1 id="balance"></h1>
+    <ul id="transactions">
+    </ul>
+    <form id="addTransactionForm">
+      <label>
+        Сумма
+        <input id="sum" type="number" placeholder="0" required />
+      </label>
+      <label>
+        Категория
+        <input id="category" type="text" required />
+      </label>
+      <label>
+        Дата
+        <input id="date" type="date" required />
+      </label>
+      <label>
+        Комментарий
+        <input id="comment" type="text"/>
+      </label>
+      <button type="submit">Добавить</button>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
