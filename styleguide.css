@@ -1,0 +1,52 @@
+:root {
+  --gray-7: rgba(73, 80, 87, 1);
+  --otherblack: rgba(0, 0, 0, 1);
+  --gray-3: rgba(222, 226, 230, 1);
+  --otherwhite: rgba(255, 255, 255, 1);
+  --shadcn-theme-background: rgba(255, 255, 255, 1);
+  --shadcn-theme-border: rgba(228, 228, 231, 1);
+  --colors-accents-green: rgba(52, 199, 89, 1);
+  --colors-accents-red: rgba(255, 56, 60, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-shadcn-theme-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-shadcn-theme-mode="light"] {
+  --shadcn-theme-background: rgba(255, 255, 255, 1);
+  --shadcn-theme-border: rgba(228, 228, 231, 1);
+}
+
+[data-shadcn-theme-mode="dark"] {
+  --shadcn-theme-background: rgba(9, 9, 11, 1);
+  --shadcn-theme-border: rgba(39, 39, 42, 1);
+}
+
+[data-colors-mode="light"] {
+  --colors-accents-green: rgba(52, 199, 89, 1);
+  --colors-accents-red: rgba(255, 56, 60, 1);
+}
+
+[data-colors-mode="dark"] {
+  --colors-accents-green: rgba(48, 209, 88, 1);
+  --colors-accents-red: rgba(255, 66, 69, 1);
+}
+
+[data-colors-mode="IC-light"] {
+  --colors-accents-green: rgba(0, 137, 50, 1);
+  --colors-accents-red: rgba(233, 21, 45, 1);
+}
+
+[data-colors-mode="IC-dark"] {
+  --colors-accents-green: rgba(74, 233, 104, 1);
+  --colors-accents-red: rgba(255, 97, 101, 1);
+}

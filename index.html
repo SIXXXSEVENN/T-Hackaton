@@ -1,31 +1,113 @@
+
+    <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <h1 id="expenses"></h1>
-    <h1 id="income"></h1>
-    <h1 id="balance"></h1>
-    <ul id="transactions">
-    </ul>
-    <form id="addTransactionForm">
-      <label>
-        Сумма
-        <input id="sum" type="number" placeholder="0" required />
-      </label>
-      <label>
-        Категория
-        <input id="category" type="text" required />
-      </label>
-      <label>
-        Дата
-        <input id="date" type="date" required />
-      </label>
-      <label>
-        Комментарий
-        <input id="comment" type="text"/>
-      </label>
-      <button type="submit">Добавить</button>
-    </form>
-    <script src="./script.js"></script>
-  </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="styleguide.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="frame" ><div class="rectangle" ></div>
+<div class="div" ></div>
+<div class="rectangle-2" ></div>
+<div class="rectangle-3" ></div>
+<div class="rectangle-4" ></div>
+<div class="rectangle-5" ></div>
+<div class="icon-wrapper" ><div class="icon" ><div class="chevron-down" ><img class="vector" src="img/vector-7.svg" /></div></div></div>
+<div class="text-wrapper" >введите категорию</div>
+<div class="rectangle-6" ></div>
+<div class="rectangle-7" ></div>
+<div class="rectangle-8" ></div>
+<div class="rectangle-9" ></div>
+<div class="rectangle-10" ></div>
+<div class="rectangle-11" ></div>
+<div class="rectangle-12" ></div>
+<div class="rectangle-13" ></div>
+<div class="rectangle-14" ></div>
+<div class="rectangle-15" ></div>
+<div class="rectangle-16" ></div>
+<div class="rectangle-17" ></div>
+<div class="rectangle-18" ></div>
+<div class="rectangle-19" ></div>
+<img class="t-bank-logo-en" src="img/t-bank-logo-en-1.svg" />
+<img class="moon" src="img/moon.svg" />
+<div class="switch" data-shadcn-theme-mode="light"><div class="background-shadow-wrapper" ><div class="background-shadow" ></div></div>
+<div class="label" ><div class="label-airplane-mode" >Темная тема</div></div></div>
+<div class="table" ><div class="div-2" ><div class="container" ><div class="div-wrapper" ><div class="header" ></div></div>
+<div class="div-wrapper" ><div class="header" ></div></div>
+<div class="div-wrapper" ><div class="header" ></div></div>
+<div class="div-wrapper" ><div class="header" ></div></div>
+<div class="div-wrapper" ><div class="header" ></div></div></div>
+<div class="divider" ></div></div>
+<div class="div-2" ><div class="container" ><div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell-2" ></div></div></div>
+<div class="divider" ></div></div>
+<div class="div-2" ><div class="container" ><div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell-3" ></div></div></div>
+<div class="divider" ></div></div>
+<div class="div-2" ><div class="container" ><div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell-4" ></div></div></div>
+<div class="divider" ></div></div>
+<div class="div-2" ><div class="container" ><div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell" ></div></div>
+<div class="div-wrapper" ><div class="cell-5" ></div></div></div>
+<div class="divider" ></div></div></div>
+<div class="text-wrapper-2" >ДАТА</div>
+<div class="text-wrapper-3" >КАТЕГОРИЯ</div>
+<div class="text-wrapper-4" >ДОХОД ЗА МЕСЯЦ</div>
+<div class="text-wrapper-5" >25 000 РУБ.</div>
+<div class="text-wrapper-6" >ДОХОД ЗА МЕСЯЦ</div>
+<div class="text-wrapper-7" >25 000 РУБ.</div>
+<div class="text-wrapper-8" >СУММА</div>
+<div class="text-wrapper-9" >КОММЕНТАРИЙ</div>
+<div class="text-wrapper-10" >все</div>
+<div class="text-wrapper-11" >ТИП</div>
+<div class="text-wrapper-12" >РАСХОДЫ</div>
+<div class="text-wrapper-13" >СУММА</div>
+<div class="text-wrapper-14" >КАТЕГОРИЯ</div>
+<div class="text-wrapper-15" >ДАТА</div>
+<div class="text-wrapper-16" >КОММЕНТАРИЙ</div>
+<div class="text-wrapper-17" >доходы</div>
+<div class="text-wrapper-18" >расходы</div>
+<div class="text-wrapper-19" >все категории</div>
+<div class="text-wrapper-20" >сначала новые</div>
+<div class="text-wrapper-21" >ЭКСПОРТ В CSV</div>
+<div class="text-wrapper-22" >ИТОРИЯ ТРАНЗАКЦИЙ</div>
+<div class="text-wrapper-23" >ДЕЙСТИВЯ</div>
+<div class="sort-vertical" ><img class="img" src="img/vector-5.svg" /></div>
+<div class="category-svgrepo-com" ><img class="vector-2" src="img/vector-2.svg" />
+<img class="transparent" src="img/transparent-rectangle.svg" /></div>
+<img class="upload" src="img/upload.svg" />
+<div class="icon-wrapper-2" ><div class="icon" ><div class="chevron-down" ><img class="vector" src="img/vector-3.svg" /></div></div></div>
+<div class="timeline" ></div>
+<div class="timeline-2" ></div>
+<div class="clock-activity" ><img class="vector-3" src="img/vector-8.svg" /></div>
+<div class="text-wrapper-24" >ДОБАВИТЬ ТРАНЗАКЦИЮ</div>
+<div class="text-wrapper-25" >0 руб.</div>
+<div class="text-wrapper" >введите категорию</div>
+<div class="text-wrapper-26" >число.месяц.год</div>
+<div class="text-wrapper-27" >введите комментарий (необзятальено)</div>
+<div class="text-wrapper-28" >ДОБАВИТЬ</div>
+<img class="square-rounded-plus" src="img/square-rounded-plus.svg" />
+<div class="graph-up-svgrepo-com" ><img class="vector-4" src="img/image.svg" />
+<img class="vector-5" src="img/vector-4.svg" /></div>
+<div class="text-wrapper-29" >текущий баланс</div>
+<div class="text-wrapper-30" >250 000 РУБ.</div>
+<div class="graph-up-svgrepo-com-2" ><img class="vector-4" src="img/vector.svg" />
+<img class="vector-5" src="img/vector-6.svg" /></div>
+<img class="calendar" src="img/calendar.svg" /></div>
+</body>
 </html>
