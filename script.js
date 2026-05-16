@@ -4,17 +4,22 @@ function addToLocalStorage(key, value) {
   localStorage.setItem(key, ((localStorage.getItem(key).parseInt() || 0) - sum).toString())
 }
 
+function saveTransactions() {
+  localStorage.setItem("transactions", JSON.stringify(transactions));
+}
+
 function addTransaction(sum, category, date, comment) {
   if (sum == 0) return;
-  if (sum < 0) addToLocalStorage("expenses", -sum);
+  else if (sum < 0) addToLocalStorage("expenses", -sum);
   else if (sum > 0) addToLocalStorage("income", sum);
   addToLocalStorage("balance", sum);
   transactions.push({ sum, category, date, comment });
-  localStorage.setItem("transactions", JSON.stringify(transactions));
+  saveTransactions();
 }
 
 function deleteTransaction(index) {
   transactions.splice(index, 1);
+  saveTransactions();
 }
 
 function editTransaction(index, val) {
@@ -22,6 +27,7 @@ function editTransaction(index, val) {
   if (val.category) transactions[index].category = val.category;
   if (val.date) transactions[index].date = val.date;
   if (val.comment) transactions[index].comment = val.comment;
+  saveTransactions();
 }
 
 function listTransactions(filter, sortby, order) { // order == true means ascending order, order == false means descending order
