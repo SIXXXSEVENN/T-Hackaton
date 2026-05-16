@@ -1,0 +1,1269 @@
+.frame {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 1440px;
+  height: 1000px;
+  position: relative;
+}
+
+.frame .rectangle {
+  position: absolute;
+  top: 148px;
+  left: 18px;
+  width: 450px;
+  height: 120px;
+  border-radius: 20px;
+  box-shadow:
+    0px 23px 42px #00000040,
+    inset 0px 4px 5.5px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .div {
+  position: absolute;
+  top: 287px;
+  left: 10px;
+  width: 620px;
+  height: 620px;
+  border-radius: 20px;
+  box-shadow:
+    0px 23px 42px #00000040,
+    inset 0px 4px 5.5px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-2 {
+  position: absolute;
+  top: 424px;
+  left: 49px;
+  width: 240px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-3 {
+  position: absolute;
+  top: 862px;
+  left: 180px;
+  width: 240px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 221, 45, 0.43) 0%,
+    rgba(255, 221, 45, 0.43) 100%
+  );
+}
+
+.frame .rectangle-4 {
+  position: absolute;
+  top: 500px;
+  left: 49px;
+  width: 502px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-5 {
+  position: absolute;
+  top: 567px;
+  left: 49px;
+  width: 502px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .icon-wrapper {
+  top: 575px;
+  left: 485px;
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  display: flex;
+}
+
+.frame .icon {
+  display: flex;
+  flex: 1;
+  width: 21.12px;
+  position: relative;
+  height: 20.48px;
+  align-items: flex-start;
+  gap: 12.8px;
+}
+
+.frame .chevron-down {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 81.06%;
+  height: 68.75%;
+  top: 31.25%;
+  left: 18.94%;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  top: 575px;
+  left: 92px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #888888;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 16.4px;
+  white-space: nowrap;
+}
+
+.frame .rectangle-6 {
+  position: absolute;
+  top: 634px;
+  left: 49px;
+  width: 502px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-7 {
+  position: absolute;
+  top: 701px;
+  left: 49px;
+  width: 502px;
+  height: 142px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-8 {
+  position: absolute;
+  top: 424px;
+  left: 311px;
+  width: 240px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-9 {
+  position: absolute;
+  top: 311px;
+  left: 718px;
+  width: 703px;
+  height: 620px;
+  border-radius: 20px;
+  box-shadow:
+    0px 23px 42px #00000040,
+    inset 0px 4px 5.5px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-10 {
+  position: absolute;
+  top: 437px;
+  left: 778px;
+  width: 600px;
+  height: 443px;
+  border-radius: 20px;
+  box-shadow:
+    0px 23px 42px #00000040,
+    inset 0px 4px 5.5px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-11 {
+  position: absolute;
+  top: 148px;
+  left: 493px;
+  width: 450px;
+  height: 120px;
+  border-radius: 20px;
+  box-shadow:
+    0px 23px 42px #00000040,
+    inset 0px 4px 5.5px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-12 {
+  position: absolute;
+  top: 148px;
+  left: 971px;
+  width: 450px;
+  height: 120px;
+  border-radius: 20px;
+  box-shadow:
+    0px 23px 42px #00000040,
+    inset 0px 4px 5.5px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-13 {
+  position: absolute;
+  top: 45px;
+  left: 971px;
+  width: 249px;
+  height: 60px;
+  border-radius: 20px;
+  box-shadow:
+    0px 23px 42px #00000040,
+    inset 0px 4px 5.5px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(1px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-14 {
+  position: absolute;
+  top: 390px;
+  left: 1225px;
+  width: 153px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-15 {
+  position: absolute;
+  top: 335px;
+  left: 1225px;
+  width: 153px;
+  height: 38px;
+  border-radius: 12.8px;
+  box-shadow:
+    0px 14.72px 26.88px #00000040,
+    inset 0px 2.56px 3.52px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.6px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.6px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-16 {
+  position: absolute;
+  top: 390px;
+  left: 1031px;
+  width: 186px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-17 {
+  position: absolute;
+  top: 390px;
+  left: 778px;
+  width: 59px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-18 {
+  position: absolute;
+  top: 390px;
+  left: 842px;
+  width: 88px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .rectangle-19 {
+  position: absolute;
+  top: 390px;
+  left: 933px;
+  width: 95px;
+  height: 34px;
+  border-radius: 16px;
+  box-shadow:
+    0px 18.4px 33.6px #00000040,
+    inset 0px 3.2px 4.4px #00000040,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  -webkit-backdrop-filter: blur(0.8px) brightness(108.0%) saturate(94.5%)
+    hue-rotate(4.2deg);
+  background: linear-gradient(
+    284deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+}
+
+.frame .t-bank-logo-en {
+  position: absolute;
+  top: 51px;
+  left: 1244px;
+  width: 177px;
+  height: 54px;
+}
+
+.frame .moon {
+  position: absolute;
+  top: 61px;
+  left: 1165px;
+  width: 24px;
+  height: 24px;
+}
+
+.frame .switch {
+  display: flex;
+  width: 175px;
+  align-items: center;
+  position: absolute;
+  top: 59px;
+  left: 990px;
+}
+
+.frame .background-shadow-wrapper {
+  display: flex;
+  width: 52.8px;
+  height: 28.8px;
+  align-items: center;
+  padding: 2.4px;
+  position: relative;
+  background-color: var(--shadcn-theme-border);
+  border-radius: 11998.8px;
+}
+
+.frame .background-shadow {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: var(--shadcn-theme-background);
+  border-radius: 11998.8px;
+  box-shadow:
+    0px 4.8px 7.2px -4.8px #0000001a,
+    0px 12px 18px -3.6px #0000001a;
+}
+
+.frame .label {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 0px 9.6px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .label-airplane-mode {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1.2px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #363636;
+  font-size: 16.8px;
+  letter-spacing: 0;
+  line-height: 20.2px;
+  white-space: nowrap;
+}
+
+.frame .table {
+  flex-direction: column;
+  width: 554px;
+  position: absolute;
+  top: 470px;
+  left: 793px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.frame .div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper {
+  gap: 16px;
+  padding: 11.2px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.frame .header {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.6px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--gray-7);
+  font-size: 22.4px;
+  letter-spacing: 0;
+  line-height: 32.8px;
+  white-space: nowrap;
+}
+
+.frame .divider {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1.6px;
+  background-color: var(--gray-3);
+}
+
+.frame .cell {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.6px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--otherblack);
+  font-size: 22.4px;
+  letter-spacing: 0;
+  line-height: 35.2px;
+  white-space: nowrap;
+}
+
+.frame .cell-2 {
+  color: #b2df8a;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.6px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 22.4px;
+  letter-spacing: 0;
+  line-height: 35.2px;
+  white-space: nowrap;
+}
+
+.frame .cell-3 {
+  color: #c92a2a;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.6px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 22.4px;
+  letter-spacing: 0;
+  line-height: 35.2px;
+  white-space: nowrap;
+}
+
+.frame .cell-4 {
+  color: #33a02c;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.6px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 22.4px;
+  letter-spacing: 0;
+  line-height: 35.2px;
+  white-space: nowrap;
+}
+
+.frame .cell-5 {
+  color: #e67700;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.6px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 22.4px;
+  letter-spacing: 0;
+  line-height: 35.2px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-2 {
+  top: 482px;
+  left: 809px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-3 {
+  top: 482px;
+  left: 904px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-4 {
+  top: 168px;
+  left: 682px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-5 {
+  position: absolute;
+  top: 189px;
+  left: 663px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #34c759;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 65.6px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-6 {
+  top: 168px;
+  left: 1162px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-7 {
+  top: 189px;
+  left: 1143px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #ff383c;
+  font-size: 28px;
+  line-height: 65.6px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-8 {
+  top: 481px;
+  left: 1031px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-9 {
+  top: 481px;
+  left: 1108px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-10 {
+  top: 390px;
+  left: 795px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-11 {
+  top: 397px;
+  left: 53px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-12 {
+  top: 425px;
+  left: 394px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-13 {
+  top: 470px;
+  left: 49px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-14 {
+  top: 534px;
+  left: 49px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-15 {
+  top: 601px;
+  left: 49px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-16 {
+  top: 668px;
+  left: 49px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-17 {
+  top: 390px;
+  left: 865px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-18 {
+  top: 390px;
+  left: 955px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-19 {
+  top: 391px;
+  left: 1064px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-20 {
+  top: 391px;
+  left: 1255px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-21 {
+  position: absolute;
+  top: 337px;
+  left: 1253px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 32.8px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-22 {
+  top: 337px;
+  left: 848px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  color: #000000;
+  font-size: 20px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-23 {
+  top: 481px;
+  left: 1234px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .sort-vertical {
+  position: absolute;
+  top: 400px;
+  left: 1235px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+}
+
+.frame .img {
+  flex: 1;
+  width: 11.67px;
+}
+
+.frame .category-svgrepo-com {
+  position: absolute;
+  top: 400px;
+  left: 1044px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.frame .vector-2 {
+  position: absolute;
+  width: 93.75%;
+  height: 93.75%;
+  top: 6.25%;
+  left: 6.25%;
+}
+
+.frame .transparent {
+  position: absolute;
+  width: 6625.00%;
+  height: 2600%;
+  top: -2500%;
+  left: -6525.00%;
+}
+
+.frame .upload {
+  position: absolute;
+  top: 346px;
+  left: 1236px;
+  width: 15px;
+  height: 15px;
+}
+
+.frame .icon-wrapper-2 {
+  top: 398px;
+  left: 1185px;
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  display: flex;
+}
+
+.frame .timeline {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 40.10%;
+  left: 58.96%;
+  background-color: var(--otherwhite);
+  border-radius: 6.4px;
+  border: 2.56px solid;
+  border-color: var(--colors-accents-green);
+}
+
+.frame .timeline-2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 40.10%;
+  left: 65.21%;
+  background-color: var(--otherwhite);
+  border-radius: 6.4px;
+  border: 2.56px solid;
+  border-color: var(--colors-accents-red);
+}
+
+.frame .clock-activity {
+  position: absolute;
+  top: 329px;
+  left: 779px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.frame .vector-3 {
+  flex: 1;
+  width: 41.96px;
+}
+
+.frame .text-wrapper-24 {
+  top: 344px;
+  left: 118px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  color: #000000;
+  font-size: 20px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-25 {
+  top: 508px;
+  left: 88px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  color: #888888;
+  font-size: 10px;
+  line-height: 16.4px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-26 {
+  top: 642px;
+  left: 92px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  color: #888888;
+  font-size: 10px;
+  line-height: 16.4px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-27 {
+  top: 713px;
+  left: 92px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  color: #888888;
+  font-size: 10px;
+  line-height: 16.4px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-28 {
+  top: 869px;
+  left: 264px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  color: #000000;
+  font-size: 12.8px;
+  line-height: 21px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .square-rounded-plus {
+  position: absolute;
+  top: 337px;
+  left: 53px;
+  width: 48px;
+  height: 48px;
+}
+
+.frame .graph-up-svgrepo-com {
+  left: 535px;
+  position: absolute;
+  top: 168px;
+  width: 80px;
+  height: 80px;
+}
+
+.frame .vector-4 {
+  position: absolute;
+  width: 94.79%;
+  height: 94.79%;
+  top: 5.21%;
+  left: 5.21%;
+}
+
+.frame .vector-5 {
+  position: absolute;
+  width: 73.96%;
+  height: 61.46%;
+  top: 38.54%;
+  left: 26.04%;
+}
+
+.frame .text-wrapper-29 {
+  top: 168px;
+  left: 231px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #000000;
+  font-size: 14px;
+  line-height: 32.8px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-30 {
+  top: 189px;
+  left: 212px;
+  font-family: "Inter-Bold", Helvetica;
+  color: #ffdd2d;
+  font-size: 28px;
+  line-height: 65.6px;
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame .graph-up-svgrepo-com-2 {
+  left: 1030px;
+  position: absolute;
+  top: 168px;
+  width: 80px;
+  height: 80px;
+}
+
+.frame .calendar {
+  position: absolute;
+  top: 642px;
+  left: 484px;
+  width: 24px;
+  height: 24px;
+}
