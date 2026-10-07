@@ -1,7 +1,7 @@
 # 67Flow 💸
 
-Лёгкий трекер личных финансов — доход, расходы и баланс в одном интерфейсе.
-Проект сделан командой за хакатон в Т-Банке на базе КФУ.
+A lightweight personal finance tracker — income, expenses, and balance in one interface.
+Built by a team during the T-Bank hackathon hosted at KFU.
 
 <p align="left">
   <img src="https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black" alt="Vanilla JS">
@@ -11,80 +11,80 @@
 
 ---
 
-## О проекте
+## About
 
-**67Flow** — веб-приложение для учёта личных финансов. Пользователь вносит доходы и расходы,
-приложение сразу пересчитывает баланс и хранит всю историю операций локально в браузере —
-без бэкенда и без регистрации.
+**67Flow** is a web app for tracking personal finances. Users log their income and expenses,
+the app instantly recalculates the balance and stores the full transaction history locally in the browser —
+no backend, no sign-up.
 
-Интерфейс выполнен в фирменном стиле Т-Банка: жёлтый акцент, светлая карточная вёрстка
-со стеклянным blur-эффектом и шрифтом Inter.
+The interface follows T-Bank's brand style: a yellow accent, a light card-based layout
+with a frosted-glass blur effect, and the Inter typeface.
 
-## Возможности
+## Features
 
-- 💰 **Добавление транзакций** — тип (доход/расход), сумма, категория, дата, комментарий
-- 📊 **Сводка в реальном времени** — текущий баланс, сумма доходов и сумма расходов
-- 🗂 **Журнал операций** — таблица истории с сортировкой по дате, категории и сумме
-- 🗑 **Удаление записей** прямо из таблицы
-- 📤 **Экспорт в CSV** одной кнопкой
-- 💾 **Хранение в `localStorage`** — данные не пропадают между сессиями и не требуют сервера
-- 📱 **Адаптивная вёрстка** — раскладка перестраивается в один столбец на экранах ≤ 900px
+- 💰 **Add transactions** — type (income/expense), amount, category, date, note
+- 📊 **Real-time summary** — current balance, total income, and total expenses
+- 🗂 **Transaction log** — history table sortable by date, category, and amount
+- 🗑 **Delete entries** right from the table
+- 📤 **One-click CSV export**
+- 💾 **`localStorage` persistence** — data survives between sessions with no server required
+- 📱 **Responsive layout** — switches to a single column on screens ≤ 900px
 
-## Стек
+## Tech Stack
 
-| Слой | Технологии |
+| Layer | Technologies |
 |---|---|
-| Разметка | HTML5 (семантические теги, ARIA-подписи) |
-| Стили | CSS3: `globals.css` (сброс + шрифт Inter), `styleguide.css` (дизайн-токены), `style.css` (компоненты) |
-| Логика | Vanilla JavaScript, без фреймворков и сборщика |
-| Данные | Browser `localStorage` |
+| Markup | HTML5 (semantic tags, ARIA labels) |
+| Styles | CSS3: `globals.css` (reset + Inter font), `styleguide.css` (design tokens), `style.css` (components) |
+| Logic | Vanilla JavaScript, no frameworks or bundler |
+| Data | Browser `localStorage` |
 
-Никаких `npm install` и шагов сборки — проект открывается как обычная статическая страница.
+No `npm install` and no build step — the project opens as a plain static page.
 
-## Быстрый старт
+## Quick Start
 
 ```bash
 git clone https://github.com/SIXXXSEVENN/T-Hackaton.git
 cd T-Hackaton
 ```
 
-Затем просто откройте `index.html` в браузере, либо поднимите локальный сервер:
+Then just open `index.html` in your browser, or spin up a local server:
 
 ```bash
 # Python
 python -m http.server 8000
 
-# или Node
+# or Node
 npx serve .
 ```
 
-и перейдите на `http://localhost:8000`.
+and go to `http://localhost:8000`.
 
-## Структура проекта
+## Project Structure
 
 ```
 T-Hackaton/
-├── index.html          # разметка приложения
-├── script.js            # вся клиентская логика (транзакции, сортировка, CSV)
-├── style.css             # компоненты интерфейса
-├── styleguide.css       # дизайн-токены
-├── globals.css           # сброс стилей + типографика
-└── icons/                # SVG-иконки интерфейса
+├── index.html          # app markup
+├── script.js            # all client-side logic (transactions, sorting, CSV)
+├── style.css             # UI components
+├── styleguide.css       # design tokens
+├── globals.css           # style reset + typography
+└── icons/                # UI SVG icons
 ```
 
-## Планы по развитию
+## Roadmap
 
-В иконках уже заложены задел под фичи, которые не успели докрутить на хакатоне:
+The icon set already lays the groundwork for features we didn't have time to finish during the hackathon:
 
-- 🌙 переключатель тёмной темы
-- 📈 графики и таймлайн по расходам/доходам
-- 🔍 фильтры по категории, типу и диапазону дат (логика фильтрации уже есть в `script.js`, не хватает UI)
-- ✏️ редактирование существующей транзакции (функция `editTransaction` готова, кнопки в интерфейсе пока нет)
+- 🌙 dark mode toggle
+- 📈 charts and a timeline of expenses/income
+- 🔍 filters by category, type, and date range (the filtering logic already exists in `script.js`; only the UI is missing)
+- ✏️ editing an existing transaction (the `editTransaction` function is ready; there's just no button in the UI yet)
 
-## Команда
+## Team
 
-Проект собран за хакатон командой из нескольких человек — см. [contributors](https://github.com/SIXXXSEVENN/T-Hackaton/graphs/contributors).
+Built during the hackathon by a team of several people — see [contributors](https://github.com/SIXXXSEVENN/T-Hackaton/graphs/contributors).
 
 ---
 
-<p align="left">Сделано с 🟡 за один хакатон.</p>
+<p align="left">Made with 🟡 in a single hackathon.</p>
